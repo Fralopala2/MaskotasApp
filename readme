@@ -1,19 +1,32 @@
-# MaskotasApp
+# 🐾 MaskotasApp  
 
-**Apps unificadas proyecto intermodulas 1º DAW**
+**Apps unificadas - Proyecto intermodular 1º DAW**  
 
-## Descripción
+![Badge en desarrollo](https://img.shields.io/badge/ESTADO-EN%20DESARROLLO-yellow) 
+![Java](https://img.shields.io/badge/Java-17%2B-orange?logo=java)
+![SQLite](https://img.shields.io/badge/SQLite-3-blue?logo=sqlite)
+![NetBeans](https://img.shields.io/badge/IDE-NetBeans%2025-1B6AC6?logo=apache-netbeans-ide)
 
-MaskotasApp es un proyecto desarrollado como parte del curso de 1º DAW (Desarrollo de Aplicaciones Web). Este repositorio contiene las aplicaciones unificadas diseñadas para gestionar y mejorar la experiencia de los usuarios con sus mascotas.
+## 📖 Descripción  
 
-## Características
+**MaskotasApp** es un proyecto desarrollado como parte del curso de 1º DAW (Desarrollo de Aplicaciones Web). Este repositorio contiene aplicaciones unificadas diseñadas para:  
 
-- Gestión de información de mascotas.
-- Funcionalidades específicas para cuidar y organizar actividades relacionadas con las mascotas.
-- Interfaz de usuario intuitiva y fácil de usar.
-- Integración de funcionalidades intermodulares.
+✔ Gestionar información completa de mascotas  
+✔ Mejorar la experiencia de dueños de mascotas  
+✔ Organizar actividades y cuidados  
 
-## Requisitos
+## ✨ Características principales  
 
-- **Lenguajes utilizados:** [JAVA - CSS - SQLITE].
-- Entorno de desarrollo compatible con las tecnologías utilizadas -> Netbeans 25
+| Área          | Funcionalidades                              |
+|---------------|---------------------------------------------|
+| 🐶 Mascotas   | Registro, historial médico, características |
+| 🗓️ Agenda    | Recordatorios de vacunas, citas, eventos    |
+| 📊 Gestión    | Almacenamiento y organización de datos      |
+| 🖥️ UI        | Interfaz intuitiva y responsive             |
+
+## 🛠️ Requisitos técnicos  
+
+```bash
+- Entorno de desarrollo: NetBeans 25
+- Java JDK 17+
+- SQLite 3
