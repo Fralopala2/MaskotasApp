@@ -1,1 +1,19 @@
+# MaskotasApp
 
+**Apps unificadas proyecto intermodulas 1º DAW**
+
+## Descripción
+
+MaskotasApp es un proyecto desarrollado como parte del curso de 1º DAW (Desarrollo de Aplicaciones Web). Este repositorio contiene las aplicaciones unificadas diseñadas para gestionar y mejorar la experiencia de los usuarios con sus mascotas.
+
+## Características
+
+- Gestión de información de mascotas.
+- Funcionalidades específicas para cuidar y organizar actividades relacionadas con las mascotas.
+- Interfaz de usuario intuitiva y fácil de usar.
+- Integración de funcionalidades intermodulares.
+
+## Requisitos
+
+- **Lenguajes utilizados:** [JAVA - CSS - SQLITE].
+- Entorno de desarrollo compatible con las tecnologías utilizadas -> Netbeans 25
