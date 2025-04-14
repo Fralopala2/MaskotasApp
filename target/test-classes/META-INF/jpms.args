@@ -1,0 +1,4 @@
+--patch-module
+com.vet.maskotasapp=_
+--add-reads
+com.vet.maskotasapp=ALL-UNNAMED
