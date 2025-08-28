@@ -1,32 +1,256 @@
-# 🐾 MaskotasApp  
+# 🐾 MaskotasApp
 
-**Apps unificadas - Proyecto intermodular 1º DAW**  
+[![Academic Project](https://img.shields.io/badge/Academic-Intermodular%20Project-blue?style=for-the-badge&logo=graduation-cap)](https://github.com/Fralopala2/MaskotasApp)
+[![1º DAW](https://img.shields.io/badge/Course-1º%20DAW-green?style=flat&logo=school)](https://github.com/Fralopala2/MaskotasApp)
+[![Pet Care](https://img.shields.io/badge/Category-Pet%20Care-orange?style=flat&logo=heart)](https://github.com/Fralopala2/MaskotasApp)
 
-![Badge en desarrollo](https://img.shields.io/badge/ESTADO-EN%20DESARROLLO-yellow) 
-![Java](https://img.shields.io/badge/Java-17%2B-orange?logo=java)
-![SQLite](https://img.shields.io/badge/SQLite-3-blue?logo=sqlite)
-![NetBeans](https://img.shields.io/badge/IDE-NetBeans%2025-1B6AC6?logo=apache-netbeans-ide)
+> **Unified Pet Care Application Suite** - Comprehensive intermodular project for Web Application Development program
 
-## 📖 Descripción  
+## 🎯 Project Overview
 
-**MaskotasApp** es un proyecto desarrollado como parte del curso de 1º DAW (Desarrollo de Aplicaciones Web). Este repositorio contiene aplicaciones unificadas diseñadas para:  
+MaskotasApp is an integrated pet management platform developed as an intermodular project, combining multiple development disciplines to create a comprehensive solution for pet owners, veterinarians, and pet care services.
 
-✔ Gestionar información completa de mascotas  
-✔ Mejorar la experiencia de dueños de mascotas  
-✔ Organizar actividades y cuidados  
+## ✨ Key Features
 
-## ✨ Características principales  
+### 🐕 **Pet Profile Management**
+- Complete pet registration system
+- Medical history tracking
+- Vaccination schedules and reminders
+- Photo gallery and documentation
 
-| Área          | Funcionalidades                              |
-|---------------|---------------------------------------------|
-| 🐶 Mascotas   | Registro, historial médico, características |
-| 🗓️ Agenda    | Recordatorios de vacunas, citas, eventos    |
-| 📊 Gestión    | Almacenamiento y organización de datos      |
-| 🖥️ UI        | Interfaz intuitiva y responsive             |
+### 🏥 **Veterinary Services**
+- Appointment booking system
+- Medical record management
+- Treatment history and prescriptions
+- Emergency contact integration
 
-## 🛠️ Requisitos técnicos  
+### 📅 **Care Scheduling**
+- Feeding reminders and schedules
+- Medication alerts
+- Grooming appointments
+- Exercise tracking
+
+### 👥 **Multi-User Platform**
+- **Pet Owners** - Full pet management
+- **Veterinarians** - Medical record access
+- **Care Providers** - Service scheduling
+- **Pet Sitters** - Care instructions access
+
+### 📱 **Mobile-First Design**
+- Responsive web application
+- Cross-platform compatibility
+- Offline functionality for critical features
+- Push notifications
+
+### 📊 **Analytics & Reports**
+- Health trend analysis
+- Care activity summaries
+- Medical report generation
+- Cost tracking
+
+## 🛠️ Technical Architecture
+
+### Frontend Applications
+- **Web Portal** - Main administrative interface
+- **Mobile App** - On-the-go pet management
+- **Veterinary Dashboard** - Professional medical interface
+
+### Backend Services
+- **User Management** - Authentication and profiles
+- **Pet Data API** - Core pet information services
+- **Scheduling Engine** - Appointment and reminder system
+- **Notification Service** - Multi-channel alerts
+
+## 🏗️ Project Structure
+
+```
+MaskotasApp/
+├── web-app/
+│   ├── src/
+│   │   ├── components/      # Reusable UI components
+│   │   ├── pages/           # Application pages
+│   │   ├── services/        # API communication
+│   │   └── utils/           # Helper functions
+│   └── public/              # Static assets
+├── mobile-app/
+│   ├── src/
+│   │   ├── screens/         # Mobile app screens
+│   │   ├── components/      # Native components
+│   │   └── navigation/      # App navigation
+├── backend/
+│   ├── api/
+│   │   ├── routes/          # API endpoints
+│   │   ├── controllers/     # Business logic
+│   │   ├── models/          # Data models
+│   │   └── middleware/      # Authentication & validation
+│   ├── database/
+│   │   ├── migrations/      # Schema changes
+│   │   └── seeders/         # Sample data
+├── shared/
+│   ├── types/               # TypeScript definitions
+│   ├── constants/           # Shared constants
+│   └── utils/               # Common utilities
+└── docs/
+    ├── api/                 # API documentation
+    ├── user-guides/         # User manuals
+    └── technical/           # Technical specifications
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 16+ and npm
+- Database system (PostgreSQL/MySQL)
+- Mobile development environment (optional)
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Fralopala2/MaskotasApp.git
+   cd MaskotasApp
+   ```
+
+2. **Install dependencies**
+   ```bash
+   # Install root dependencies
+   npm install
+   
+   # Install backend dependencies
+   cd backend && npm install
+   
+   # Install web app dependencies
+   cd ../web-app && npm install
+   
+   # Install mobile app dependencies (optional)
+   cd ../mobile-app && npm install
+   ```
+
+3. **Configure environment**
+   ```bash
+   # Copy and configure environment files
+   cp backend/.env.example backend/.env
+   cp web-app/.env.example web-app/.env
+   ```
+
+4. **Setup database**
+   ```bash
+   cd backend
+   npm run db:migrate
+   npm run db:seed
+   ```
+
+5. **Start development servers**
+   ```bash
+   # Start backend API (terminal 1)
+   cd backend && npm run dev
+   
+   # Start web application (terminal 2)  
+   cd web-app && npm start
+   
+   # Start mobile app (terminal 3, optional)
+   cd mobile-app && npm start
+   ```
+
+## 🎭 User Personas
+
+### Pet Owners 👨‍👩‍👧‍👦
+- Register and manage multiple pets
+- Track medical history and appointments
+- Set care reminders and schedules
+- Share access with family members
+
+### Veterinarians 👩‍⚕️
+- Access patient medical records
+- Schedule appointments and follow-ups
+- Prescribe medications and treatments
+- Generate medical reports
+
+### Pet Care Providers 🐕‍🦺
+- View care instructions and schedules
+- Update care activities and notes
+- Emergency contact information
+- Service billing and invoicing
+
+## 📱 Application Modules
+
+### Core Modules
+- **Authentication** - Secure user management
+- **Pet Profiles** - Comprehensive pet data
+- **Medical Records** - Health history tracking
+- **Appointments** - Scheduling system
+- **Notifications** - Multi-channel alerts
+
+### Advanced Features
+- **Emergency Mode** - Quick access to critical info
+- **Sharing** - Family and caregiver access
+- **Export** - Medical record portability
+- **Analytics** - Health and care insights
+
+## 🎓 Educational Objectives
+
+This intermodular project demonstrates:
+
+### Programming Modules
+- **Frontend Development** - React/Vue.js web applications
+- **Mobile Development** - Cross-platform app creation
+- **Backend Development** - RESTful API design
+- **Database Management** - Relational data modeling
+
+### Integration Skills
+- **Full-Stack Architecture** - End-to-end system design
+- **API Integration** - Service communication
+- **User Experience** - Interface design principles
+- **Project Management** - Agile development practices
+
+## 🧪 Testing Strategy
 
 ```bash
-- Entorno de desarrollo: NetBeans 25
-- Java JDK 17+
-- SQLite 3
+# Run unit tests
+npm run test
+
+# Run integration tests  
+npm run test:integration
+
+# Run end-to-end tests
+npm run test:e2e
+
+# Generate coverage report
+npm run test:coverage
+```
+
+## 📚 Documentation
+
+- [API Documentation](docs/api/) - Backend service specs
+- [User Guide](docs/user-guides/) - Application usage
+- [Technical Specs](docs/technical/) - System architecture
+- [Development Guide](docs/development-guide.md) - Setup and contribution
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/new-feature`)
+3. Follow coding standards and write tests
+4. Commit changes (`git commit -m 'Add new feature'`)
+5. Push branch (`git push origin feature/new-feature`)
+6. Open Pull Request with detailed description
+
+## 🏆 Project Achievements
+
+- ✅ **Unified Architecture** - Seamless multi-platform integration
+- ✅ **Real-time Features** - Live notifications and updates  
+- ✅ **Responsive Design** - Mobile-first user experience
+- ✅ **Scalable Backend** - Microservices architecture
+- ✅ **Comprehensive Testing** - Unit, integration, and E2E tests
+
+## 📄 License
+
+This project is developed for educational purposes under academic guidelines.
+
+---
+
+<div align="center">
+  <p>🐾 Caring for pets through technology</p>
+  <p>🎓 Intermodular project - 1º DAW</p>
+  <p>⭐ Star this repo if you love pets and coding!</p>
+</div>
